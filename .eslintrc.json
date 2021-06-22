@@ -20,6 +20,8 @@
   "rules": {
     "prettier/prettier": "error",
     "max-len": ["warn", { "code": 80 }],
+    "class-methods-use-this": "off",
+    "camelcase": "off",
     "import/prefer-default-export": "off",
     "import/no-unresolved": [
       2,
