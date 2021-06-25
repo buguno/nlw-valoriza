@@ -27,7 +27,7 @@ class AuthenticateUserService {
       {
         email: user.email,
       },
-      'b85b08e7817e7dcb492d733bf0a914fb',
+      process.env.BCRYPT_PASSWORD,
       {
         subject: user.id,
         expiresIn: '1d',
