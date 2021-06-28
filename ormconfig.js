@@ -1,6 +1,6 @@
 module.exports = {
-  "type": "sqlite",
-  "database": `${(process.env.MODE === "prod") ? "dist/database/database.sqlite" : "src/database/database.sqlite"}`,
+  "type": "postgres",
+  "url": process.env.DATABASE_URL,
   "migrations": [
     `${(process.env.MODE === "prod") ? "dist/database/migrations/*.js" : "src/database/migrations/*.ts"}`
   ],
